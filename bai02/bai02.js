@@ -1,9 +1,12 @@
-let met = +prompt("nhập số mét(m) muốn đổi");
+let temperature =prompt("Nhập thông tin nhiệt độ hiện tại của phòng bạn");
 
-let feet = met * 0.3048 ;
-
-if (met > 0) {
-    alert(`${met}m được quy đổi bằng ${feet} ft`);
-} else {
-    alert("Mời bạn nhập lại số")
+while(true) {
+    if (temperature > 100) {
+        alert("yêu cầu người dùng giảm nhiệt độ");
+    }else if (temperature < 20) {
+        alert("yêu cầu người dùng tăng nhiệt độ");
+    }else {
+        alert("Hoạt động bình thường")
+    }
+    break;
 }
