@@ -1,7 +1,13 @@
-let number = prompt("Mời bạn nhập một số nguyên bất kì");
+let prev = 0;
+let cuzz = 1;
 
-if(number > 0){
-    console.log("Đây là số nguyên dương");
-}else{
-    console.log("Đây là số nguyên âm");
-}
+let count = 2;
+
+console.log(prev);
+while (count < 20){
+    console.log(cuzz);
+    let sum = prev + cuzz;
+    prev = cuzz;
+    cuzz = sum;
+    count++;
+} 
