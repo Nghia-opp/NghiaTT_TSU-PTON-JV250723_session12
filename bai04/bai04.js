@@ -1,12 +1,13 @@
-const a = +prompt("Mời bạn nhập số a");
-const b = +prompt("Mời bạn nhập số b");
-const c = +prompt("Mời bạn nhập số c");
+let prev = 0;
+let cuzz = 1;
 
-if (a>=b && a>=b){
-    console.log(`Giá trị lớn nhất là ${a}` );        
-} else if(b>=a && b>=c) {
-    console.log(`Giá trị lớn nhất là ${b}` ); 
-} else {
-    console.log(`Giá trị lớn nhất là ${c}` ); 
-}
+let sum;
 
+while (true){
+    sum = prev + cuzz;
+    if (sum % 5 == 0){
+        break;
+    }
+    prev = cuzz;
+    cuzz = sum;
+} console.log('fibonacci', sum);
