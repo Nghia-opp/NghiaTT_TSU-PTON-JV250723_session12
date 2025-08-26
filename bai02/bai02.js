@@ -1,7 +1,9 @@
-let age = prompt("Please input your age");
+let met = +prompt("nhập số mét(m) muốn đổi");
 
-if (age >= 16){
-    alert("Bạn đủ điều kiện vào học lớp 10 của trường THPT");
+let feet = met * 0.3048 ;
+
+if (met > 0) {
+    alert(`${met}m được quy đổi bằng ${feet} ft`);
 } else {
-    alert("Bạn không đủ điều kiện vào học lớp 10");
+    alert("Mời bạn nhập lại số")
 }
